@@ -133,8 +133,22 @@
   color: #3b3b3b;
 }
 
-@media (max-width: 768px) {
-  .c-title2 {
+@media (max-width: 850px) {
+
+  .return .z-nav-r{
+    width: 20px;
+    margin-top: 35px;
+    margin-right: 0px;
+  }
+
+    img.z-nav-1 {
+      width: 55px;
+      height: 55px;
+      margin-top: 25px;
+      margin-right: 0px;
+    }
+
+    .c-title2 {
     display: block;
   }
   .c-crumbs, .c-page, .mem {
