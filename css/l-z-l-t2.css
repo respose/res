@@ -199,7 +199,11 @@
   height: 100%;
   display: block; 
   background: #1E1E1E;
+<<<<<<< HEAD
   background-image: url('../img/z-l-banner5.png');
+=======
+  background-image: url('../img/ljb/z-l-banner5.png');
+>>>>>>> 31bf8a3a2ab7c088291f058b1043710bff156db3
   background-position: center center;
   background-repeat: no-repeat;
 }

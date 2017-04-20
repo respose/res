@@ -1111,9 +1111,15 @@ figure.effect-chico:hover p {
 	transform: scale(1);
 }
 
+<<<<<<< HEAD
 /* @media screen and (max-width: 69.5em) {
 	.grid figure {
 		width: 5%;
+=======
+@media screen and (max-width: 69.5em) {
+	.grid figure {
+		width: 50%;
+>>>>>>> 31bf8a3a2ab7c088291f058b1043710bff156db3
 	}	
 
 	.grid figure figcaption {
@@ -1127,4 +1133,8 @@ figure.effect-chico:hover p {
 	.grid figure {
 		width: 100%;
 	}
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 31bf8a3a2ab7c088291f058b1043710bff156db3
