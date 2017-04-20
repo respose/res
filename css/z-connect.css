@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .z-titleb p:nth-child(1) {
   text-align: center;
   font-size: 18px;
@@ -57,7 +56,7 @@
   color: #52361e; }
 
 .z-titles div {
-  width: 462px;
+  /*width: 462px;*/
   height: 1px;
   background: #dedede;
   margin: 0 auto;
@@ -222,7 +221,7 @@
   font-size: 20px;
   font-family: "΢���ź�";
   color: #4b4b4b;
-  width: 500px; }
+  width: auto; }
 
 .z-pss textarea {
   width: 100%;
