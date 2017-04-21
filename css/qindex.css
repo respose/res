@@ -867,7 +867,9 @@ a[class="nav-div-a"] {
         height: 33.33%;
         position: relative; }
         .xin section > ul li > p {
-          font-size: 12px; }
+          font-size: 12px; 
+          margin:0;
+          }
         .xin section > ul li > p:first-child {
           font-size: 18px;
           color: #520E0E;
@@ -880,7 +882,9 @@ a[class="nav-div-a"] {
           top: 5px;
           right: 0px; }
       .xin section > ul li.first > p {
-        color: #fff; }
+        color: #fff; 
+        
+        }
       .xin section > ul li.first > span {
         color: #fff; }
       .xin section > ul li.first:before {
