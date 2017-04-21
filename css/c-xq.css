@@ -133,7 +133,7 @@
   color: #3b3b3b;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 780px) {
 
   .return .z-nav-r{
     width: 20px;
@@ -141,12 +141,25 @@
     margin-right: 0px;
   }
 
-    img.z-nav-1 {
-      width: 55px;
-      height: 55px;
-      margin-top: 25px;
-      margin-right: 0px;
-    }
+  .backgr {
+    height: 80px;
+  }
+
+  img.z-nav-1 {
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+  .dingwei,.z-nav-3{
+    margin-top: 20px;
+  }
+
+  body > ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
 
     .c-title2 {
     display: block;
