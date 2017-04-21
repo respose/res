@@ -3,35 +3,35 @@
  */
 window.onload=function(){
     function getFigure(str3, str4, str5) {
-        let flag = true;
-        let picture = document.querySelectorAll(str3);
+        var flag = true;
+        var picture = document.querySelectorAll(str3);
         console.log(picture.length);
-        let circles = document.querySelectorAll(str4);
+        var circles = document.querySelectorAll(str4);
         console.log(circles.length)
-        let div = document.querySelector(str5);
-        let n = 0;
-        let t = setInterval(move, 3000);//µ÷ÓÃmoveº¯Êý£¨Ê¹ÓÃÊ±¼äº¯Êý£¬ÈÃÆä×Ô¶¯±ä»¯£©
-        function move(way = "right") {//ÉèÖÃmoveÀïµÄ²ÎÊýÄ¬ÈÏÊÇright
-            if (way == "right") {//Èç¹û²ÎÊýÊÇÄ¬ÈÏÇé¿ö£¬ºÍÔ­±¾¾ÍÏòÓÒ×ßÒ»Ñù£¬ÈÃn×Ô¼Ó
+        var div = document.querySelector(str5);
+        var n = 0;
+        var t = setInterval(move, 3000);//ï¿½ï¿½ï¿½ï¿½moveï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ê±ï¿½äº¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ä»¯ï¿½ï¿½
+        function move(way = "right") {//ï¿½ï¿½ï¿½ï¿½moveï¿½ï¿½Ä²ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½right
+            if (way == "right") {//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nï¿½Ô¼ï¿½
                 n++;
-                if (n >= picture.length) {//µ±Í¼Æ¬µ½´ï×îºóÒ»¸öÊ±£¬½«Æä¸³ÖµÎª0£¬´ÓÍ·¿ªÊ¼Ñ­»·
+                if (n >= picture.length) {//ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ä¸³ÖµÎª0ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½Ê¼Ñ­ï¿½ï¿½
                     n = 0;
                 }
             }
-            picture.forEach(function (value, index) {//Ñ­»·Í¼Æ¬
-                value.classList.remove("first-two")//½«ËùÓÐº¬ÓÐfirst-one¡¢first-one-oneÒÆ³ý
+            picture.forEach(function (value, index) {//Ñ­ï¿½ï¿½Í¼Æ¬
+                value.classList.remove("first-two")//ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½first-oneï¿½ï¿½first-one-oneï¿½Æ³ï¿½
                 circles[index].classList.remove("first-one")
             });
-            picture[n].classList.add("first-two");//½«´ËÊ±nÖµ¸¶¸øµãµãºÍÍ¼Æ¬
+            picture[n].classList.add("first-two");//ï¿½ï¿½ï¿½ï¿½Ê±nÖµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
             circles[n].classList.add("first-one");
         }
-        div.onmouseover = function () {//µ±ÒÆÈëµÄÊ±ºòÍ£Ö¹ÂÖ²¥Í¼Ñ­»·
+        div.onmouseover = function () {//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Í£Ö¹ï¿½Ö²ï¿½Í¼Ñ­ï¿½ï¿½
             clearInterval(t)
         }
         div.onmouseout = function () {
-            t = setInterval(move, 3000);//µ±ÒÆ³ýµÄÊ±ºò£¬µ÷ÓÃmoveº¯Êý£¬¼ÌÐø½øÐÐÑ­»·
+            t = setInterval(move, 3000);//ï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½Ê±ï¿½ò£¬µï¿½ï¿½ï¿½moveï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½
         }
-        let m;
+        var m;
         circles.forEach(function (value, index) {//
             value.onmouseover = function () {
                 clearTimeout(m)
@@ -62,12 +62,12 @@ window.onload=function(){
     getFigure('.z-x-banner5','.diandian1 .changtiao5','.imgbox13')
     getFigure('.z-x-banner6','.diandian1 .changtiao6','.imgbox14')
 }
-//Ð¡ÆÁ
+//Ð¡ï¿½ï¿½
 $(function(){
-    let body=$('body');
-    let html=$('html');
+    var body=$('body');
+    var html=$('html');
     window.onresize=function() {
-        let width=$(window).width();
+        var width=$(window).width();
         if(width<=1200){
             $('.z-nav-3').off();
             $('.z-nav-3').click(function(){
@@ -85,7 +85,7 @@ $(function(){
         }
     }
     $(window).triggerHandler('resize');
-    //Ñ¡Ïî¿¨
+    //Ñ¡ï¿½î¿¨
     function xuanxuan(xuan1,xuan2,xuan3=''){
         $(xuan1).mouseover(function(){
             $(xuan1).removeClass('first');
