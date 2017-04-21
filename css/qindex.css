@@ -126,11 +126,11 @@ body > div:first-of-type {
   background: white; }
 
 .z-banner .tutu .english1 {
-  width: 522px;
+  /*width: 522px;*/
   height: auto;
   text-align: center;
   position: absolute;
-  left: 50%;
+  left: 46%;
   top: 415px;
   margin-left: -261px;
   color: white;
