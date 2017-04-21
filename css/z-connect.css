@@ -1,3 +1,9 @@
+.z-nav-11{
+  width:55px;
+  height:55px;
+  margin-top:25px;
+  margin-left: -10px;
+}
 .z-titleb p:nth-child(1) {
   text-align: center;
   font-size: 18px;
@@ -163,7 +169,7 @@
   border-bottom: 1px solid #bfbfbf; }
 
 .z-talk {
-  padding: 0 0 89px;
+  padding: 0 0 129px;
   border-bottom: 1px solid #bfbfbf; }
 
 .z-psb p:nth-child(1), .z-psb p:nth-child(2) {
