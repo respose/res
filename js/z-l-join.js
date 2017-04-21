@@ -2,65 +2,7 @@
  * Created by hp1 on 2017/4/18.
  */
 window.onload=function(){
-    function getFigure(str3, str4, str5) {
-        var flag = true;
-        var picture = document.querySelectorAll(str3);
-        console.log(picture.length);
-        var circles = document.querySelectorAll(str4);
-        console.log(circles.length)
-        var div = document.querySelector(str5);
-        var n = 0;
-        var t = setInterval(move, 3000);//����move������ʹ��ʱ�亯���������Զ��仯��
-        function move(way = "right") {//����move��Ĳ���Ĭ����right
-            if (way == "right") {//���������Ĭ���������ԭ����������һ������n�Լ�
-                n++;
-                if (n >= picture.length) {//��ͼƬ�������һ��ʱ�����丳ֵΪ0����ͷ��ʼѭ��
-                    n = 0;
-                }
-            }
-            picture.forEach(function (value, index) {//ѭ��ͼƬ
-                value.classList.remove("first-two")//�����к���first-one��first-one-one�Ƴ�
-                circles[index].classList.remove("first-one")
-            });
-            picture[n].classList.add("first-two");//����ʱnֵ��������ͼƬ
-            circles[n].classList.add("first-one");
-        }
-        div.onmouseover = function () {//�������ʱ��ֹͣ�ֲ�ͼѭ��
-            clearInterval(t)
-        }
-        div.onmouseout = function () {
-            t = setInterval(move, 3000);//���Ƴ���ʱ�򣬵���move��������������ѭ��
-        }
-        var m;
-        circles.forEach(function (value, index) {//
-            value.onmouseover = function () {
-                clearTimeout(m)
-                m = setTimeout(function () {
-                    clearTimeout(m);
-                    picture.forEach(function (value, index) {
-                        value.classList.remove("first-two")
-                        circles[index].classList.remove("first-one")
-                    })
-                    picture[index].classList.add("first-two");
-                    value.classList.add("first-one");
-                    n = index;
-                }, 200)
-            }
-            value.onmouseout = function () {
-                clearTimeout(m)
-            }
-        });
-        picture.forEach(function (value) {
-            value.addEventListener('transitionend', function () {
-                flag = true;
-            })
-        });
-    }
-    getFigure('.tutu','.diandian .changtiao','.z-banner')
-    getFigure('.tutu2','.diandian2 .changtiao2','.z-banner2')
-    getFigure('.z-x-banner4','.diandian1 .changtiao4','.imgbox12')
-    getFigure('.z-x-banner5','.diandian1 .changtiao5','.imgbox13')
-    getFigure('.z-x-banner6','.diandian1 .changtiao6','.imgbox14')
+
 }
 //С��
 $(function(){
@@ -97,4 +39,64 @@ $(function(){
     xuanxuan(".z-content-l .z-smallimg img",".z-content-l .z-bigimg img")
     xuanxuan('.z-zi',".dian",".z-zi");
     xuanxuan('.z-zizi','.imgbox1','.z-zizi');
+//    lunbo
+    function getFigure(str3, str4, str5) {
+        var flag = true;
+        var picture=$(str3);
+        var circles=$(str4);
+        var div=$(str5)
+        var n = 0;
+        var t = setInterval(move, 3000);//����move������ʹ��ʱ�亯���������Զ��仯��
+        function move(way = "right") {//����move��Ĳ���Ĭ����right
+            console.log(1);
+            if (way == "right") {//���������Ĭ���������ԭ����������һ������n�Լ�
+                n++;
+                if (n >= picture.length) {//��ͼƬ�������һ��ʱ�����丳ֵΪ0����ͷ��ʼѭ��
+                    n = 0;
+                }
+            }
+            picture.each(function (index) {//ѭ��ͼƬ
+                picture.eq(index).removeClass("first-two")//�����к���first-one��first-one-one�Ƴ�
+                console.log(picture.eq(index));
+                circles.eq(index).removeClass("first-one")
+            });
+            picture.eq(n).addClass("first-two");//����ʱnֵ��������ͼƬ
+            circles.eq(n).addClass("first-one");
+        }
+        div.mouseover(function () {//�������ʱ��ֹͣ�ֲ�ͼѭ��
+            clearInterval(t)
+        });
+        div.mouseout(function () {
+            t = setInterval(move, 1500);//���Ƴ���ʱ�򣬵���move��������������ѭ��
+        });
+        var m;
+        circles.each(function (i) {//
+            circles.eq(i).mouseover(function () {
+                clearTimeout(m)
+                m = setTimeout(function () {
+                    clearTimeout(m);
+                    picture.each(function (index) {
+                        picture.eq(index).removeClass("first-two")
+                        circles.eq(index).removeClass("first-one")
+                    })
+                    picture.eq(i).addClass("first-two");
+                    circles.eq(i).addClass("first-one");
+                    n = i;
+                }, 200)
+            });
+            circles.eq(i).mouseout(function () {
+                clearTimeout(m)
+            });
+        });
+        picture.each(function (v) {
+            picture.get(v).addEventListener('transitionend', function () {
+                flag = true;
+            })
+        });
+    }
+    getFigure('.tutu','.diandian .changtiao','.z-banner')
+    getFigure('.tutu2','.diandian2 .changtiao2','.z-banner2')
+    getFigure('.z-x-banner4','.diandian1 .changtiao4','.imgbox12')
+    getFigure('.z-x-banner5','.diandian1 .changtiao5','.imgbox13')
+    getFigure('.z-x-banner6','.diandian1 .changtiao6','.imgbox14')
 });
