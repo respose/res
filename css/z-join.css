@@ -598,7 +598,7 @@ a[class="nav-div-a"] {
   left: 0; }
 .imgbox1 img{
   background-position: center;
-  
+  background-size:cover;
 }
 .imgbox1 img:nth-child(1){
   background-image: url("../img/qbanner1.png");
