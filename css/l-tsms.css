@@ -101,6 +101,7 @@ a:hover {
 
 .container > .row > .olm > .bbbb .l-k img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .container > .row > .olm > .bbbb .lop {
@@ -167,9 +168,9 @@ a:hover {
     height: 80px;
   }
 
-  .container > .row > .olm > div.diyi{
+ /*  .container > .row > .olm > div.diyi{
     margin-top: 55px;
-  }
+  } */
   img.z-nav-1 {
     width: 55px;
     height: 55px;
@@ -200,8 +201,12 @@ a:hover {
 
 @media (max-width: 450px) {
   .container > .row .bbbb .fg {
-    width: 68%;
+    width: 75%;
     height: 280px;
+  }
+
+ .grid figure a {
+   border-radius: 5px;
   }
   .hh {
     display: none;
