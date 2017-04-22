@@ -269,7 +269,7 @@ a[class="nav-div-a"] {
 
 .container > .row .c-title p:first-child {
   font-family: 'Kokila';
-  font-size: 24px;
+  font-size: 22px;
   color: #6d6d6d;
   text-transform: uppercase;
 }
@@ -485,7 +485,7 @@ a[class="nav-div-a"] {
   }
   .c-item-title {
     color: #032929;
-    font-size: 24px;
+    font-size: 18px;
     text-align: left;
   }
   .c-time {
@@ -497,7 +497,7 @@ a[class="nav-div-a"] {
   }
   .c-item-text {
     color: #302929;
-    font-size: 18px;
+    font-size: 14px;
   }
   .c-author, .c-item-english, .page, .mem {
     display: none;
