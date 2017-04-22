@@ -12,10 +12,11 @@ a:hover {
   height: 110px;
   background: #F6F9FA;
   text-align: center;
+  margin-top: 20px;
 }
 
 .container > .row > .aa .bb {
-  font-size: 14px;
+  font-size: 18px;
   color: #6d6d6d;
   line-height: 5px;
   margin-bottom: 10px;
@@ -90,7 +91,6 @@ a:hover {
   text-align: center;
   transition: transform 0.8s;
 }
-
 .container > .row > .olm > .bbbb .l-k {
   width: 236px;
   height: 280px;
