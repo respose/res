@@ -439,10 +439,10 @@ a[class="nav-div-a"] {
   }
 
   img.z-nav-1 {
-  width: 55px;
-  height: 55px;
-  margin-top: 15px;
-  margin-right: 0px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    margin-left: -15px;
   }
   .dingwei,.z-nav-3{
     margin-top: 20px;
