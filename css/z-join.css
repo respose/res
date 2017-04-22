@@ -126,7 +126,7 @@
   top: 0;
   z-index: 100;
   width: 100%;
-  height: 106px; }
+  height: 80px; }
 
 .z-img-box {
   text-align: center; }
@@ -420,7 +420,7 @@ a[class="nav-div-a"] {
 
 .z-titles p:nth-child(2) {
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "΢���ź�";
   margin-bottom: 10px;
   color: #52361e; }
@@ -447,7 +447,8 @@ a[class="nav-div-a"] {
   font-size: 18px;
   font-family: "Arial";
   color: #3b3b3b;
-  margin-bottom: 90px; }
+  /*margin-bottom: 90px; */
+}
 
 .zhan {
   height: 630px; }
@@ -480,7 +481,7 @@ a[class="nav-div-a"] {
   height: 30px; }
 
 .z-fenleis span:nth-child(1), .z-fenleis span:nth-child(3), .z-fenleis span:nth-child(5) {
-  font-size: 24px;
+  font-size: 20px;
   color: #b7b5b5; }
 
 .z-fenleis div {
@@ -595,7 +596,22 @@ a[class="nav-div-a"] {
   overflow: hidden;
   top: 0;
   left: 0; }
-
+.imgbox1 img{
+  background-position: center;
+  background-size:cover;
+}
+.imgbox1 img:nth-child(1){
+  background-image: url("../img/qbanner1.png");
+}
+.imgbox1 img:nth-child(2){
+  background-image: url("../img/qbanner2.png");
+}
+.imgbox1 img:nth-child(3){
+  background-image: url("../img/qbanner1.png");
+}
+.imgbox1 img:nth-child(4){
+  background-image: url("../img/qbanner2.png");
+}
 .imgbox1.first {
   display: block; }
 
@@ -666,7 +682,8 @@ a[class="nav-div-a"] {
 
 .z-imgs {
   margin-top: 30px;
-  width: 100%; }
+  width: 100%;
+  display:block;}
 
 .z-imgst {
   height: 310px; }
