@@ -78,7 +78,7 @@ $(function(){
                     picture.each(function (index) {
                         picture.eq(index).removeClass("first-two")
                         circles.eq(index).removeClass("first-one")
-                        
+
                     })
                     picture.eq(i).addClass("first-two");
                     circles.eq(i).addClass("first-one");
