@@ -1,9 +1,10 @@
 $(function(){
 	function getFigure(str3, str4, str5) {
         let flag = true;
-        let picture = document.querySelectorAll(str3);
-        let circles = document.querySelectorAll(str4);
         let div = document.querySelector(str5);
+        let picture = div.querySelectorAll(str3);
+        let circles = div.querySelectorAll(str4);
+        
         let n = 0;
         let t = setInterval(move, 3000);//����move����ʹ��ʱ�亯�������Զ��仯��
         function move(way = "right") {//����move��Ĳ���Ĭ����right
@@ -51,7 +52,11 @@ $(function(){
             })
         });
     }
-    getFigure('.tutu','.diandian .changtiao','.z-banner')
+    getFigure('.z-bannerbig >.tutu','.diandian .changtiao','.z-bannerbig');
+    getFigure('.z-bannermidden >.tutu','.z-bannermidden >.diandian .changtiao','.z-bannermidden');
+    
+    getFigure('.z-bannersmall >.tutu','.z-bannersmall >.diandian .changtiao','.z-bannersmall');
+    
 	let a=$(".footer-middle-div-h4");
     let b=$('.footer-div-div-ul');
     let c=$('.span');
@@ -90,20 +95,22 @@ $(function(){
 		$('.pingpai > .smallzi > li').removeClass('first');
 		$(this).addClass('first');
 	})
-	
 	$('.tese .main1 .mm').mouseover(function(){
 		$('.tese .main1 .mm').removeClass('first');
 		$(this).addClass('first');
 		$('.tese .check1 .boxmian').removeClass('first');
+		$('.tese .check3 ul').removeClass('first');
 		$('.tese .check1 .boxmian').eq($(this).index('.mm')).addClass('first');
+		$('.tese .check3 ul').eq($(this).index('.mm')-3).addClass('first');
 	})
 	$('.tese .main2 .mm').mouseover(function(){
+		console.log($('.tese .check3 ul'))
 		$('.tese .main2 .mm').removeClass('first');
 		$(this).addClass('first');
 		$('.tese .check2 ul').removeClass('first');
 		$('.tese .check2 ul').eq($(this).index('.mm')-3).addClass('first');
+		
 	});
-	
 	
 	 function getFigure(str3, str4, str5) {
         let flag = true;
