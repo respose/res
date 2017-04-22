@@ -23,7 +23,7 @@
   padding-right: 22px;
   color: #1d1c1c; }
 
-.z-nav a:nth-child(4) {
+.z-nav a:nth-child(3) {
   color: #820e0e;
   border-bottom: 2px solid #820e0e;
   box-sizing: border-box; }
@@ -44,7 +44,7 @@
 
 .z-nav .z-angle {
   position: absolute;
-  left: 430px;
+  left: 264px;
   bottom: 1px;
   border: 5px solid transparent;
   border-bottom: 5px solid #520e0e; }
