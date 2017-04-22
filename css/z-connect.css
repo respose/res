@@ -47,7 +47,7 @@
 
 .z-titles p:nth-child(1) {
   text-align: center;
-  font-size: 36px;
+  font-size: 22px;
   font-family: "Arial";
   margin-top: 60px;
   margin-bottom: 10px;
@@ -56,7 +56,7 @@
 
 .z-titles p:nth-child(2) {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "΢���ź�";
   margin-bottom: 10px;
   color: #52361e; }
@@ -83,7 +83,8 @@
   font-size: 18px;
   font-family: "Arial";
   color: #3b3b3b;
-  margin-bottom: 90px; }
+  /*margin-bottom: 90px;*/
+}
 
 .z-messb {
   text-align: center; }
@@ -212,19 +213,19 @@
   border-bottom: 1px solid #bfbfbf; }
 
 .z-pss p:nth-child(1), .z-pss p:nth-child(2) {
-  font-size: 33px;
+  font-size: 22px;
   color: #ae8e71;
   font-family: "Arial";
   font-weight: bold; }
 
 .z-pss p:nth-child(3) {
   font-family: "΢���ź�";
-  font-size: 24px;
+  font-size: 18px;
   color: #2e2c2c;
   margin: 20px 0; }
 
 .z-pss p:nth-child(4), .z-pss p:nth-child(5), .z-pss p:nth-child(6) {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "΢���ź�";
   color: #4b4b4b;
   width: auto; }
