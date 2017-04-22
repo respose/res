@@ -263,7 +263,7 @@ body > div:first-of-type > div.row:last-of-type {
 
 body > ul {
   position: absolute;
-  top: 106px;
+  top: 80px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -479,7 +479,7 @@ a[class="nav-div-a"] {
   .tese > .mian {
     height: 30px;
     margin-bottom: 20px;
-    padding-left: 8%; }
+    padding-left: 6%; }
     .tese > .mian > li {
       width: auto;
       height: 100%;
@@ -575,7 +575,7 @@ a[class="nav-div-a"] {
     .tese .check.check1 > .boxmian > li {
       padding: 0; }
       .tese .check.check1 > .boxmian > li > div {
-        height: 40px;
+        height: 35px;
         margin: 100px 15px 0;
         border: 1px solid #898989;
         border-radius: 5px; }
@@ -1179,3 +1179,6 @@ a[class="nav-div-a"] {
     z-index: -1; }
     div.bg img {
       width: 100%; } }
+	ul{
+		margin:0;
+	}
