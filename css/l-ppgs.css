@@ -87,6 +87,7 @@
 
 .container > .row > .poi p {
   margin-top: 25px;
+  text-align: justify;
 }
 
 .container > .row > .img {
